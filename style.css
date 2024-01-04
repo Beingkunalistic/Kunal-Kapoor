@@ -11,7 +11,6 @@
     position: fixed;
     height: 40px;
     width: 100%;
-    list-style: none;
     justify-content: flex-end;
     padding-right: 70px;
     padding-top: 20px;
@@ -21,16 +20,18 @@
 .navbar nav {
     display: flex;
     gap: 70px;
-    color: white;
     font-size: 18px;
 }
 
-.navbar nav li {
+.navbar nav a {
     position: relative;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
+
 }
 
-.navbar nav li::after {
+.navbar nav a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -41,14 +42,16 @@
     transition: width 0.3s ease;
 }
 
-.navbar nav li:hover::after {
+.navbar nav a:hover::after {
     width: 100%;
 }
-.first-section{
-    height:500px;
+
+.first-section {
+    height: 597px;
 }
+
 img {
-    z-index: -90;
+    z-index: -100;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,10 +77,44 @@ img {
     transform: translateY(-20px);
 }
 
+/* .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #3498db;
+    /* You can change the color */
+
+@keyframes bounce {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.button {
+    margin-top: 30px;
+    font-size: 80px;
+    color: white;
+    animation: bounce 2s infinite;
+    cursor:pointer;
+}
+
 .name {
     font-size: 50px;
 }
 
 .name span {
     color: rgb(236, 152, 189);
+}
+
+.about-section{
+    height:600px;
+    background-color: #25253C;
+}
+.about-text{
+    color:white;
 }
