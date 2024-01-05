@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Tourney:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -100,7 +101,7 @@
     font-size: 80px;
     color: white;
     animation: bounce 2s infinite;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .name {
@@ -111,30 +112,35 @@
     color: rgb(236, 152, 189);
 }
 
-.about-section{
-    height:600px;
+.about-section {
+    height: 600px;
     background-color: rgba(255, 255, 255, 0.9);
 }
-.about-flex{
+
+.about-flex {
     display: flex;
 }
-.about-text{
-    margin:70px;
-    color:black;
-    font-size:17px;
+
+.about-text {
+    margin: 70px;
+    color: black;
+    font-size: 17px;
 }
-.profile-pic{
+
+.profile-pic {
     margin: 20px;
-    padding:20px;
-    width:100%;
+    padding: 20px;
+    width: 100%;
 }
 
-h1{
-    font-size:55px;
+h1 {
+    font-size: 55px;
+    font-family: 'Caveat', cursive;
 }
 
-#dynamic-text{
+#dynamic-text {
     border-right: 2px solid #000;
     padding-right: 5px;
-    color:rgba(223, 12, 195, 0.97)
+    color: rgba(223, 12, 195, 0.97);
+    font-family: 'Caveat', cursive;
 }
