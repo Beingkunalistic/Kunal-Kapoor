@@ -7,14 +7,18 @@
     /* box-sizing: border-box; */
 }
 
+body{
+overflow-x: hidden;
+}
+
 .navbar {
     background-color: transparent;
     position: fixed;
-    height: 40px;
+    height: 50px;
     width: 100%;
     justify-content: flex-end;
     padding-right: 70px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     /* box-shadow: 0 0 5px 2px #888888; */
 }
 
@@ -62,29 +66,22 @@
 }
 
 .intro-left {
-    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.4); */
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     font-family: 'Tourney', sans-serif;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(1000px);
     transition: opacity 1s, transform 1s;
 }
 
 .intro-left.active {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateX(20px);
 }
 
-/* .arrow {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid #3498db;
-    /* You can change the color */
 
 @keyframes bounce {
     from {
@@ -142,5 +139,68 @@ h1 {
     border-right: 2px solid #000;
     padding-right: 5px;
     color: rgba(223, 12, 195, 0.97);
-    font-family: 'Caveat', cursive;
 }
+
+.project-section {
+    height: 650px;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: opacity 1s, transform 1s;
+}
+
+.project-section.active {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.project-header h1 {
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.nav-active {
+    height: 60px;
+    background-color: rgb(40, 43, 42);
+    transition: background-color, height 0.4s ease;
+    z-index: 1000;
+}
+
+.cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: rgba(115, 101, 101, 0.445);
+    color: white;
+    font-size: 20px;
+    width: 25%;
+    height: 350px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(249, 248, 248, 0.664);
+}
+
+.card-text {
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+.card:hover {
+    border: 1px white solid;
+    transition: border 0.5s ease;
+    transform: scale3d(1.03, 1.03, 2.2);
+    transition: transform 0.5s ease;
+}
+
+/* .card:hover p{
+    transform: scale3d(1.1, 1.1, 2.2);
+    transition: transform 0.5s ease; 
+} */

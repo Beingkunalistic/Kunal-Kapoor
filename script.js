@@ -19,7 +19,7 @@ function scrollAbout() {
 
 //script for animating text.
 document.addEventListener('DOMContentLoaded', function () {
-  const words = ['Student', 'Web Developer', 'Musician', 'Tech Enthusiast!'];
+  const words = ['Student', 'Web Developer', 'Musician', 'Freelancer', 'Tech Enthusiast.'];
   let index = 0;
   let letterIndex = 0;
   let currentWord = '';
@@ -49,3 +49,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
   type(); // Start the typing animation
 });
+
+//adding class to navbar when the screen has been scrolled for a bit.
+
+const scrollLength = 96.80000305175781;
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= scrollLength) {
+    // console.log("working");
+    document.querySelector('.navbar').classList.add("nav-active");
+  }
+  else if (window.scrollY < scrollLength) {
+    document.querySelector('.navbar').classList.remove("nav-active");
+  }
+  // console.log(window.scrollY);
+})
+
+const project = document.querySelector('.project-section');
+let options = {
+  root: null, // this is viewport
+  rootMargin: '0px', // the viewport margin is set to 0px
+  threshold: 0.4 // when the specified section 50% visible only then will the content appear
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      project.classList.add('active');
+      observer.unobserve(entry.target);
+    }
+  });
+}, options);
+
+observer.observe(project); // start observing the section
+
+function redirectuser(){
+  window.location.href = URL;
+}
+
+//adding event listener to class = card so it links to github repo or live project.
+// const redirectTo = 'https://github.com/beingkunalistic'
+// document.querySelector('.card').addEventListener('click', function(){
+//   window.open(redirectTo, '_blank');
+// })
+
