@@ -10,12 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //function to scroll the page upon clicking the down arrow.
 function scrollAbout() {
-  var targetSection = document.getElementById('about');
-  var offset = 600;
+  var targetSection = document.getElementById('scroll-to-about');
+  var offset = 660;
   targetSection.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   window.scrollBy(0, offset);
 }
 
+// function scrollProject() {
+//   var targetSection = document.getElementById('projects');
+//   console.log("working");
+//   var offset = 1320;
+//   targetSection.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+//   window.scrollBy(0, offset);
+// }
 
 //script for animating text.
 document.addEventListener('DOMContentLoaded', function () {
@@ -82,13 +89,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 observer.observe(project); // start observing the section
 
-function redirectuser(){
-  window.location.href = URL;
+function redirectUser(url){
+  window.open(url, '_blank');
 }
-
-//adding event listener to class = card so it links to github repo or live project.
-// const redirectTo = 'https://github.com/beingkunalistic'
-// document.querySelector('.card').addEventListener('click', function(){
-//   window.open(redirectTo, '_blank');
-// })
 

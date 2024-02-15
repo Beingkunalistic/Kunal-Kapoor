@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Tourney:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Tourney:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -7,8 +8,8 @@
     /* box-sizing: border-box; */
 }
 
-body{
-overflow-x: hidden;
+body {
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -26,6 +27,7 @@ overflow-x: hidden;
     display: flex;
     gap: 70px;
     font-size: 18px;
+    color:white;
 }
 
 .navbar nav a {
@@ -73,7 +75,7 @@ overflow-x: hidden;
     flex-direction: column;
     font-family: 'Tourney', sans-serif;
     opacity: 0;
-    transform: translateX(1000px);
+    transform: translateX(-800px);
     transition: opacity 1s, transform 1s;
 }
 
@@ -110,7 +112,8 @@ overflow-x: hidden;
 }
 
 .about-section {
-    height: 600px;
+    height: 660px;
+    width: 100vw;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -142,7 +145,7 @@ h1 {
 }
 
 .project-section {
-    height: 650px;
+    height: 850px;
     background-color: transparent;
     opacity: 0;
     transform: translateX(-150px);
@@ -157,7 +160,12 @@ h1 {
 .project-header h1 {
     color: white;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nav-active {
@@ -204,3 +212,85 @@ h1 {
     transform: scale3d(1.1, 1.1, 2.2);
     transition: transform 0.5s ease; 
 } */
+
+.bottom-nav{
+    background-color: black;
+    color:white;
+    height: 200px;
+    width: 100vw;
+    padding: 40px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github {
+    font-size: 30px;
+    width: 40px;
+}
+
+.github:hover::before {
+    content: "\f09b";
+    cursor: pointer;
+    transition: all .5s;
+    /* font-size: 27px; */
+}
+
+.LinkedIn {
+    font-size: 30px;
+    width: 40px;
+}
+
+.LinkedIn:hover::before {
+    content: "\f0e1";
+    cursor: pointer;
+    font-size: 27px;
+    color: rgb(11, 86, 200);
+    transition: color .5s;
+}
+
+.twitter {
+    font-size: 30px;
+    width: 40px;
+}
+
+.twitter:hover::before {
+    content: "\e61b";
+    cursor: pointer;
+    font-size: 27px;
+    /* background-color: black; */
+    color: white;
+    transition: color .5s;
+}
+.insta{
+    font-size:30px;
+    width:40px;
+}
+.insta:hover::before{
+    content:"\f16d";
+    cursor:pointer;
+    color:rgb(181, 7, 169);
+    transition: color .5s;
+}
+.contactMe{
+    text-align:center;
+}
+.contact-btn{
+    padding:7px;
+    background-color: transparent;
+    border:1px solid rgb(255, 255, 255);
+    color:white;
+}
+.contact-btn:hover{
+    transform: scale3d(1.05, 1.05, 2);
+    transition: transform .3s ease;
+}
+footer{
+    color:white; 
+    /* font-size:25px;  */
+    text-align: center;
+    padding-bottom:10px;
+}
