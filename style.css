@@ -235,7 +235,7 @@ h1 {
 .github:hover::before {
     content: "\f09b";
     cursor: pointer;
-    transition: all .5s;
+    /* transition: all .5s; */
     /* font-size: 27px; */
 }
 
@@ -248,8 +248,8 @@ h1 {
     content: "\f0e1";
     cursor: pointer;
     font-size: 27px;
-    color: rgb(11, 86, 200);
-    transition: color .5s;
+    /* color: rgb(11, 86, 200);
+    transition: color .5s; */
 }
 
 .twitter {
@@ -262,8 +262,8 @@ h1 {
     cursor: pointer;
     font-size: 27px;
     /* background-color: black; */
-    color: white;
-    transition: color .5s;
+    /* color: white;
+    transition: color .5s; */
 }
 .insta{
     font-size:30px;
@@ -272,8 +272,8 @@ h1 {
 .insta:hover::before{
     content:"\f16d";
     cursor:pointer;
-    color:rgb(181, 7, 169);
-    transition: color .5s;
+    /* color:rgb(181, 7, 169);
+    transition: color .5s; */
 }
 .contactMe{
     text-align:center;
