@@ -71,25 +71,50 @@ window.addEventListener('scroll', function () {
   // console.log(window.scrollY);
 })
 
-const project = document.querySelector('.project-section');
-let options = {
-  root: null, // this is viewport
-  rootMargin: '0px', // the viewport margin is set to 0px
-  threshold: 0.4 // when the specified section 50% visible only then will the content appear
-};
+// let project = document.querySelector('.project-section');
+// let options = {
+//   root: null, // this is viewport
+//   rootMargin: '0px', // the viewport margin is set to 0px
+//   threshold: 0.4 // when the specified section 40% visible only then will the content appear
+// };
+// const observer = new IntersectionObserver((entries, observer) => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       console.log('targeted')
+//       project.classList.add('active');
+//       observer.unobserve(entry.target);
+//     }
+//   });
+// }, options);
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      project.classList.add('active');
-      observer.unobserve(entry.target);
-    }
-  });
-}, options);
+// observer.observe(project); // start observing the section
 
-observer.observe(project); // start observing the section
+// Function to check if an element is in the viewport
+// function isInViewport(element) {
+//   const rect = element.getBoundingClientRect();
+//   return (
+//       rect.top >= 0 &&
+//       rect.left >= 0 &&
+//       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+// }
+
+// // Function to add the 'active' class when the section is in the viewport
+// function activateSection() {
+//   const project = document.getElementById('projects');
+//   if (isInViewport(project)) {
+//       project.classList.add('active');
+//   } else {
+//       project.classList.remove('active');
+//   }
+// }
+
+// window.addEventListener('scroll', activateSection);
+
+// activateSection();
+
 
 function redirectUser(url){
   window.open(url, '_blank');
 }
-

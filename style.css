@@ -8,9 +8,16 @@
     /* box-sizing: border-box; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
+    /* background-color:#000; */
 }
+
+
 
 .navbar {
     background-color: transparent;
@@ -27,7 +34,7 @@ body {
     display: flex;
     gap: 70px;
     font-size: 18px;
-    color:white;
+    color: white;
 }
 
 .navbar nav a {
@@ -54,10 +61,20 @@ body {
 }
 
 .first-section {
-    height: 597px;
+    height: 710px;
+    background-image: url(/First-sectionwp.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-.wallpaper {
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.72);
+}
+
+/* .wallpaper {
     z-index: -100;
     position: fixed;
     top: 0;
@@ -65,11 +82,11 @@ body {
     width: 100%;
     height: 750px;
     object-fit: cover;
-}
+} */
 
 .intro-left {
     /* background-color: rgba(0, 0, 0, 0.4); */
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -108,13 +125,13 @@ body {
 }
 
 .name span {
-    color: rgb(236, 152, 189);
+    color: rgb(117, 168, 54);
 }
 
 .about-section {
     height: 660px;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255);
 }
 
 .about-flex {
@@ -141,24 +158,23 @@ h1 {
 #dynamic-text {
     border-right: 2px solid #000;
     padding-right: 5px;
-    color: rgba(223, 12, 195, 0.97);
+    color: rgba(56, 95, 9, 0.97);
 }
 
 .project-section {
-    height: 850px;
-    background-color: transparent;
-    opacity: 0;
-    transform: translateX(-150px);
-    transition: opacity 1s, transform 1s;
+    height: auto;
+    /* opacity: 0;
+    transform: translateY(550px);
+    transition: opacity 1s, transform 1s; */
 }
 
-.project-section.active {
+/* .project-section.active {
     opacity: 1;
-    transform: translateX(-10px);
-}
+    transform: translateY(10px);
+} */
 
 .project-header h1 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -170,7 +186,7 @@ h1 {
 
 .nav-active {
     height: 60px;
-    background-color: rgb(40, 43, 42);
+    background-color: rgba(75, 97, 48, 0.99);
     transition: background-color, height 0.4s ease;
     z-index: 1000;
 }
@@ -185,27 +201,46 @@ h1 {
 
 .card {
     border-radius: 10px;
-    background-color: rgba(115, 101, 101, 0.445);
-    color: white;
-    font-size: 20px;
-    width: 25%;
-    height: 350px;
+    width: 50%;
+    height: 550px;
     padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
     cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(249, 248, 248, 0.664);
+    box-shadow: 2px 2px 30px rgb(0, 0, 0);
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card h4, i:hover {
+    text-align: center;
+}
+
+.link{
+    font-size: 20px;
+    color:black;
+}
+
+.link:hover{
+    color:rgb(70, 70, 70);
 }
 
 .card-text {
     padding: 10px;
     text-align: center;
-    width: 350px;
 }
 
-.card:hover {
-    border: 1px white solid;
+.card img {
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.card img:hover {
     transition: border 0.5s ease;
-    transform: scale3d(1.03, 1.03, 2.2);
-    transition: transform 0.5s ease;
+    transform: scale3d(1.25, 1.25, 2.2);
+    transition: transform 1s ease;
 }
 
 /* .card:hover p{
@@ -213,23 +248,20 @@ h1 {
     transition: transform 0.5s ease; 
 } */
 
-.bottom-nav{
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
-    color:white;
+    color: white;
     height: 200px;
     width: 100vw;
     padding: 40px;
 }
 
-.social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .github {
     font-size: 30px;
-    width: 40px;
+    width: 65px;
 }
 
 .github:hover::before {
@@ -241,7 +273,7 @@ h1 {
 
 .LinkedIn {
     font-size: 30px;
-    width: 40px;
+    width: 65px;
 }
 
 .LinkedIn:hover::before {
@@ -254,7 +286,7 @@ h1 {
 
 .twitter {
     font-size: 30px;
-    width: 40px;
+    width: 65px;
 }
 
 .twitter:hover::before {
@@ -265,32 +297,51 @@ h1 {
     /* color: white;
     transition: color .5s; */
 }
-.insta{
-    font-size:30px;
-    width:40px;
+
+.insta {
+    font-size: 30px;
+    width: 65px;
 }
-.insta:hover::before{
-    content:"\f16d";
-    cursor:pointer;
+
+.insta:hover::before {
+    content: "\f16d";
+    cursor: pointer;
     /* color:rgb(181, 7, 169);
     transition: color .5s; */
 }
-.contactMe{
-    text-align:center;
+
+.contactMe {
+    text-align: center;
 }
-.contact-btn{
-    padding:7px;
+
+.contact-btn {
+    padding: 7px;
     background-color: transparent;
-    border:1px solid rgb(255, 255, 255);
-    color:white;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
 }
-.contact-btn:hover{
+
+.contact-btn:hover {
     transform: scale3d(1.05, 1.05, 2);
     transition: transform .3s ease;
 }
-footer{
-    color:white; 
+
+footer {
+    color: white;
     /* font-size:25px;  */
     text-align: center;
-    padding-bottom:10px;
+    padding-bottom: 10px;
+}
+
+.logo-vid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (min-width:1700px){
+    .first-section{
+        height:1200px;
+    }
 }

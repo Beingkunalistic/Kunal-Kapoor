@@ -7,34 +7,42 @@
     <link rel="icon" href="Site-logo.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
         integrity="..." crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/520182828a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Kunal Kapoor</title>
 </head>
 
 <body>
-    <img class="wallpaper" src="wallpaper2.jpg">
-    <div class="navbar">
-        <nav>
-            <a href="#about" onclick="scrollAbout()">About</a>
-            <a href="#projects" onclick="scrollProject()">Projects</a>
-            <a href="Contact.html" target="_blank">Contact</a>
-        </nav>
-    </div><br><br><br><br><br>
+
+    <!-- <img class="wallpaper" src="/First-sectionwp.jpg"> -->
     <div class="first-section">
-        <div class="intro-left">
-            <p class="name">Hi, I'm <span>Kunal</span>.</p>
-            <h2 class="name">Web developer with expertise in HTML, CSS,<br>
-                JavaScript and Wordpress.<br>
-                Currently working on React.js
-            </h2>
-        </div>
-        <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
-            <button id="scroll-to-about" onclick="scrollAbout()" style="background-color: transparent; border:none;"><i
-                    class="button fa-solid fa-angles-down"></i></button>
+        <div class="overlay">
+            <div class="navbar">
+                <nav>
+                    <a href="#about" onclick="scrollAbout()">About</a>
+                    <a href="#projects" onclick="scrollProject()">Projects</a>
+                    <a href="Contact.html" target="_blank">Contact</a>
+                </nav>
+            </div><br><br><br><br>
+            <div class="intro-left">
+                <p class="name">Hi, I'm <span>Kunal</span>.</p>
+                <h2 class="name">Web developer with expertise in HTML, CSS,<br>
+                    JavaScript and Wordpress.<br>
+                    Currently working on React.js
+                </h2>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                <button id="scroll-to-about" onclick="scrollAbout()"
+                    style="background-color: transparent; border:none;"><i
+                        class="button fa-solid fa-angles-down"></i></button>
+            </div>
         </div>
     </div>
     <div class="about-section">
-        <div><h2 style="padding:10px;">&nbsp;</h2></div>
+        <div>
+            <h2 style="padding:10px;">&nbsp;</h2>
+        </div>
         <div class="about-flex">
             <div class="profile">
                 <img class="profile-pic" src="Site-logo.jpg">
@@ -61,14 +69,16 @@
             </div>
         </div>
     </div><br>
-
-    <div class="project-section">
+    <hr>
+    <div class="project-section" id="projects">
         <div class="project-header">
-            <h1 class="kanit-extralight" id="projects">Projects</h1>
-        </div><br>
+            <h1 class="kanit-extralight">Projects</h1>
+        </div><br><br><br>
         <div class="cards">
             <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/notestakingapp/')">
-                <h4>Notes App</h4>
+                <img src="/Notesapp.png" alt="">
+                <h4>Notes App <i class="fa-solid fa-link link"
+                        onclick="redirectUser('https://beingkunalistic.github.io/notestakingapp/')"></i></h4>
                 <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
                     commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia
@@ -76,8 +86,9 @@
                     possimus quas modi enim?
                 </p>
             </div>
-            <div class="card" onclick="redirectUser('')">
-                <h4>Quiz App</h4>
+            <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/Quiz-app/')">
+                <img src="/Quizapp.png" alt="">
+                <h4>Quiz App <i class="fa-solid fa-link link"></i></h4>
                 <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
                     commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
@@ -85,7 +96,7 @@
                 </p>
             </div>
             <div class="card" onclick="redirectUser('')">
-                <h4>Project</h4>
+                <h4>Project <i class="fa-solid fa-link link"></i></h4>
                 <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
                     commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
@@ -93,7 +104,7 @@
                 </p>
             </div>
             <div class="card" onclick="redirectUser('')">
-                <h4>Project</h4>
+                <h4>Project <i class="fa-solid fa-link link"></i></h4>
                 <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
                     commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
@@ -101,7 +112,7 @@
                 </p>
             </div>
             <div class="card" onclick="redirectUser('')">
-                <h4>Project</h4>
+                <h4>Project <i class="fa-solid fa-link link"></i></h4>
                 <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
                     commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
@@ -109,7 +120,7 @@
                 </p>
             </div>
             <div class="card" onclick="redirectUser('')">
-                <h4>Project</h4>
+                <h4>Project <i class="fa-solid fa-link link"></i></h4>
                 <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
                     commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
@@ -124,13 +135,15 @@
             <i class="fa-brands fa-linkedin LinkedIn"></i>
             <i class="fa-brands fa-square-x-twitter twitter"></i>
             <i class="fa-brands fa-square-instagram insta"></i>
-        </div><br>
-        <div class="contactMe">
-            <button class="contact-btn">Contact Me</button>
         </div>
+    </div><br>
+    <div class="logo">
+
+        <source src="/logo.mp4" type="video/mp4"
+            style="width:100px; height: 100px; margin:0; padding:0; mix-blend-mode: multiply;">
+
     </div>
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/520182828a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
