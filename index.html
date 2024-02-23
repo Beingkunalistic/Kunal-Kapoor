@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Site-logo.jpg">
+    <link rel="icon" href="/assets/Site-logo.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
         integrity="..." crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -22,7 +22,7 @@
                 <nav>
                     <a href="#about" onclick="scrollAbout()">About</a>
                     <a href="#projects" onclick="scrollProject()">Projects</a>
-                    <a href="Contact.html" target="_blank">Contact</a>
+                    <a href="">Contact</a>
                 </nav>
             </div><br><br><br><br>
             <div class="intro-left">
@@ -45,7 +45,7 @@
         </div>
         <div class="about-flex">
             <div class="profile">
-                <img class="profile-pic" src="Site-logo.jpg">
+                <img class="profile-pic" src="/assets/Site-logo.jpg">
             </div>
             <div class="about-text">
                 <p>Greetings, folks! Kunal at your service, currently navigating the seas of BCA's third year while
@@ -76,73 +76,85 @@
         </div><br><br><br>
         <div class="cards">
             <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/notestakingapp/')">
-                <img src="/Notesapp.png" alt="">
-                <h4>Notes App <i class="fa-solid fa-link link"
-                        onclick="redirectUser('https://beingkunalistic.github.io/notestakingapp/')"></i></h4>
+                <img src="/assets/Notesapp.png" lazy alt="">
+                <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/notestakingapp')">Notes App
+                    <i class="fa-solid fa-link"></i>
+                </h3>
                 <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
-                    commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia
-                    deserunt
-                    possimus quas modi enim?
+                    Created a dynamic notes app using HTML, CSS, and JavaScript. Implemented features include adding,
+                    saving, and searching notes. The app allows users to save notes persistently using local storage.
+                    The addition of a functional search bar enhances user experience
                 </p>
             </div>
             <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/Quiz-app/')">
-                <img src="/Quizapp.png" alt="">
-                <h4>Quiz App <i class="fa-solid fa-link link"></i></h4>
-                <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
-                    commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
-                    possimus quas modi enim?
-                </p>
+                <img src="/assets/Quizapp.png" lazy alt="">
+                <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/Quiz-app')">Quiz App <i
+                        class="fa-solid fa-link"></i></h4>
+                    <p class="card-text">
+                        Developed an interactive quiz game using HTML, CSS, and JavaScript. The project features a clean
+                        and responsive design, allowing users to answer multiple-choice questions. Questions are loaded
+                        dynamically from a predefined array, and the game tracks correct and incorrect answers.
+                    </p>
             </div>
-            <div class="card" onclick="redirectUser('')">
-                <h4>Project <i class="fa-solid fa-link link"></i></h4>
-                <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
-                    commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
-                    possimus quas modi enim?
-                </p>
+            <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/Random-color-generator/')">
+                <img src="/assets/randomcolorgenerator.png" lazy alt="">
+                <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/Random-color-generator')">
+                    Random Color generator <i class="fa-solid fa-link"></i></h4>
+                    <p class="card-text">
+                        Created a dynamic Color Generator using HTML, CSS, and JavaScript. The user-friendly interface
+                        displays a randomly generated color code upon clicking the "Click me" button. An innovative
+                        feature automatically copies the color code to the clipboard, eliminating the need for manual
+                        copying.
+
+                    </p>
             </div>
-            <div class="card" onclick="redirectUser('')">
-                <h4>Project <i class="fa-solid fa-link link"></i></h4>
-                <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
-                    commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
-                    possimus quas modi enim?
-                </p>
+            <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/To-do-list/')">
+                <img src="/assets/todolist.png" lazy alt="">
+                <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/To-do-list')">Project <i
+                        class="fa-solid fa-link"></i></h4>
+                    <p class="card-text">
+                        Developed a minimalist to-do list using HTML, CSS, and JavaScript. The user-friendly interface
+                        allows quick input of tasks, marked with a simple strike-through for completed items.
+                        Implemented a day and night mode toggle for personalized visual preferences.
+                    </p>
             </div>
-            <div class="card" onclick="redirectUser('')">
-                <h4>Project <i class="fa-solid fa-link link"></i></h4>
-                <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
-                    commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
-                    possimus quas modi enim?
-                </p>
+            <div class="card" onclick="redirectUser('https://marcglocal.netlify.app/')">
+                <video autoplay loop>
+                    <source src="/assets/Wordpress-project.mp4" type="video/mp4">
+                </video>
+                <h3 class="link"> Digital Marketing Agency <i class="fa-solid fa-link"></i></h4>
+                    <p class="card-text">
+                        WordPress, CSS and Javascript.
+                    </p>
             </div>
-            <div class="card" onclick="redirectUser('')">
-                <h4>Project <i class="fa-solid fa-link link"></i></h4>
-                <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
-                    commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia deserunt
-                    possimus quas modi enim?
-                </p>
+            <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/linktree-replica/')">
+                <img src="/assets/linktree.png" lazy alt="">
+                <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/linktree-replica')">LinkTree
+                    Replica<i class="fa-solid fa-link"></i></h4>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
+                        commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia
+                        deserunt
+                        possimus quas modi enim?
+                    </p>
             </div>
         </div>
     </div><br><br>
     <div class="bottom-nav">
         <div class="social">
-            <i class="fa-brands fa-square-github github"></i>
-            <i class="fa-brands fa-linkedin LinkedIn"></i>
-            <i class="fa-brands fa-square-x-twitter twitter"></i>
-            <i class="fa-brands fa-square-instagram insta"></i>
+            <i class="fa-brands fa-square-github github"
+                onclick="redirectUser('https://github.com/beingkunalistic')"></i>
+            <i class="fa-brands fa-linkedin LinkedIn" onclick="redirectUser('')"></i>
+            <i class="fa-brands fa-square-x-twitter twitter" onclick="redirectUser('')"></i>
+            <i class="fa-brands fa-square-instagram insta" onclick="redirectUser('')"></i>
         </div>
     </div><br>
-    <div class="logo">
+    <!-- <div class="logo">
 
         <source src="/logo.mp4" type="video/mp4"
             style="width:100px; height: 100px; margin:0; padding:0; mix-blend-mode: multiply;">
 
-    </div>
+    </div> -->
     <script src="script.js"></script>
 </body>
 
