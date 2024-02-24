@@ -16,12 +16,12 @@
 <body>
 
     <!-- <img class="wallpaper" src="/First-sectionwp.jpg"> -->
-    <div class="first-section">
+    <div class="first-section" id="home">
         <div class="overlay">
             <div class="navbar">
                 <nav>
-                    <a href="#about" onclick="scrollAbout()">About</a>
-                    <a href="#projects" onclick="scrollProject()">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
                     <a href="">Contact</a>
                 </nav>
             </div><br><br><br><br>
@@ -110,7 +110,7 @@
             </div>
             <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/To-do-list/')">
                 <img src="/assets/todolist.png" lazy alt="">
-                <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/To-do-list')">Project <i
+                <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/To-do-list')">To-Do List <i
                         class="fa-solid fa-link"></i></h4>
                     <p class="card-text">
                         Developed a minimalist to-do list using HTML, CSS, and JavaScript. The user-friendly interface
@@ -130,28 +130,125 @@
             <div class="card" onclick="redirectUser('https://beingkunalistic.github.io/linktree-replica/')">
                 <img src="/assets/linktree.png" lazy alt="">
                 <h3 class="link" onclick="redirectUser('https://github.com/Beingkunalistic/linktree-replica')">LinkTree
-                    Replica<i class="fa-solid fa-link"></i></h4>
+                    Replica <i class="fa-solid fa-link"></i></h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dolore, natus fugiat pariatur
-                        commodi blanditiis vel, suscipit iusto laborum esse aliquid sint expedita dolorum mollitia
-                        deserunt
-                        possimus quas modi enim?
+                        This is a LinkTree replica created with HTML5 and CSS3.
                     </p>
             </div>
         </div>
     </div><br><br>
     <div class="bottom-nav">
+        <div class="contact-form">
+            <!--Section: Contact v.2-->
+            <section class="mb-4">
+
+                <!--Section heading-->
+                <span class="h1-responsive font-weight-bold text-left my-4" style="font-size: 30px;">GET IN
+                    TOUCH</span><br><br>
+                <!--Section description-->
+                <span class="text-left w-responsive mx-auto mb-5">Do you have any questions? Want to work with
+                    me?</span><br><br>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary"
+                                onclick="document.getElementById('contact-form').submit();">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center" style="margin-top: -60px;">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>Mumbai, Thane</p>
+                            </li>
+
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+ 91 9769159140</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>kkapoor2604@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </section>
+            <!--Section: Contact v.2-->
+        </div>
+        <div class="divider"></div>
         <div class="social">
-            <i class="fa-brands fa-square-github github"
-                onclick="redirectUser('https://github.com/beingkunalistic')"></i>
+            <i class="fa-brands fa-github github" onclick="redirectUser('https://github.com/beingkunalistic')"></i>
             <i class="fa-brands fa-linkedin LinkedIn"
                 onclick="redirectUser('https://www.linkedin.com/in/kunal-kapoor-02b138245/')"></i>
-            <i class="fa-brands fa-square-x-twitter twitter"
-                onclick="redirectUser('https://twitter.com/maihoonkunal')"></i>
-            <i class="fa-brands fa-square-instagram insta"
+            <i class="fa-brands fa-twitter twitter" onclick="redirectUser('https://twitter.com/maihoonkunal')"></i>
+            <i class="fa-brands fa-instagram insta"
                 onclick="redirectUser('https://www.instagram.com/beingkunalistic/')"></i>
         </div>
-    </div><br>
+    </div>
     <!-- <div class="logo">
 
         <source src="/logo.mp4" type="video/mp4"

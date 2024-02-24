@@ -26,6 +26,7 @@ body {
     width: 100%;
     justify-content: flex-end;
     padding-right: 70px;
+    transition: background-color, height 0.2s ease;
     /* padding-top: 20px; */
     /* box-shadow: 0 0 5px 2px #888888; */
 }
@@ -58,6 +59,13 @@ body {
 
 .navbar nav a:hover::after {
     width: 100%;
+}
+
+.nav-active {
+    height: 60px;
+    background-color: rgba(75, 97, 48, 0.99);
+    transition: background-color, height 0.4s ease;
+    z-index: 1000;
 }
 
 .first-section {
@@ -184,16 +192,11 @@ h1 {
     font-style: normal;
 }
 
-.nav-active {
-    height: 60px;
-    background-color: rgba(75, 97, 48, 0.99);
-    transition: background-color, height 0.4s ease;
-    z-index: 1000;
-}
+
 
 .cards {
     display: flex;
-    gap: 50px;
+    gap: 250px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -202,7 +205,7 @@ h1 {
 .card {
     border-radius: 10px;
     width: 50%;
-    height: 550px;
+    height: 570px;
     padding: 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
@@ -255,70 +258,52 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    gap:80px;
+    background-color: rgb(35, 35, 35);
     color: white;
-    height: 200px;
+    height: 500px;
     width: 100vw;
     padding: 40px;
 }
 
-.github {
-    font-size: 30px;
-    width: 65px;
+.contact-form{
+    flex-basis:800px;
 }
 
-.github:hover::before {
-    content: "\f09b";
-    cursor: pointer;
-    /* transition: all .5s; */
-    /* font-size: 27px; */
+.divider{
+    width:2px;
+    height:90%;
+    background-color:white;
+}
+
+.social{
+    display:flex; 
+    gap:40px;
+}
+
+.website{
+    font-size:30px;
+    cursor:pointer;
+}
+
+.github {
+    font-size: 30px;
+    cursor:pointer;
 }
 
 .LinkedIn {
     font-size: 30px;
-    width: 65px;
-}
-
-.LinkedIn:hover::before {
-    content: "\f0e1";
-    cursor: pointer;
-    font-size: 27px;
-    /* color: rgb(11, 86, 200);
-    transition: color .5s; */
+    cursor:pointer;
 }
 
 .twitter {
     font-size: 30px;
-    width: 65px;
-}
-
-.twitter:hover::before {
-    content: "\e61b";
-    cursor: pointer;
-    font-size: 27px;
-    /* background-color: black; */
-    /* color: white;
-    transition: color .5s; */
+    cursor:pointer;
 }
 
 .insta {
     font-size: 30px;
-    width: 65px;
-}
-
-.insta:hover::before {
-    content: "\f16d";
-    cursor: pointer;
-    /* color:rgb(181, 7, 169);
-    transition: color .5s; */
-}
-
-
-footer {
-    color: white;
-    /* font-size:25px;  */
-    text-align: center;
-    padding-bottom: 10px;
+    cursor:pointer;
 }
 
 .logo-vid {
@@ -334,5 +319,8 @@ footer {
     }
     .about-section{
         height:1100px;
+    }
+    .card{
+        height:650px;
     }
 }
