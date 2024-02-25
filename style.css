@@ -324,3 +324,37 @@ h1 {
         height:650px;
     }
 }
+@media (max-width:400px){
+    body{
+        overflow-x:none;
+    }
+    .navbar{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .first-section{
+        height:800px;
+        width:600px;
+    }
+    #scroll-to-about{
+        display:none;
+    }
+    .about-section{
+        height:800px;
+        width:600px;
+        text-wrap: wrap;
+        font-size: 20px;
+    }
+    .about-flex{
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-pic{
+
+    }
+}
