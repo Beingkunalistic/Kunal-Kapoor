@@ -326,7 +326,7 @@ h1 {
 }
 @media (max-width:400px){
     body{
-        overflow-x:none;
+        overflow-x:hidden !important;
     }
     .navbar{
         text-align: center;
@@ -353,8 +353,5 @@ h1 {
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
-    }
-    .profile-pic{
-
     }
 }
