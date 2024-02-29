@@ -214,17 +214,17 @@ h1 {
 }
 
 .card h3 {
-    font-size:25px;
+    font-size: 25px;
     text-align: center;
 }
 
-.link{
+.link {
     font-size: 20px;
-    color:black;
+    color: black;
 }
 
-.link:hover{
-    color:rgb(70, 70, 70);
+.link:hover {
+    color: rgb(70, 70, 70);
 }
 
 .card-text {
@@ -235,7 +235,7 @@ h1 {
 .card img {
     border-radius: 7px;
     margin-bottom: 10px;
-    transform:scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     transition: transform 1s ease;
 }
 
@@ -244,8 +244,8 @@ h1 {
     transition: transform 1s ease;
 }
 
-.card video{
-    transform:scale3d(1, 1, 1);
+.card video {
+    transform: scale3d(1, 1, 1);
     transition: transform 1s ease;
 }
 
@@ -258,7 +258,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:80px;
+    gap: 80px;
     background-color: rgb(35, 35, 35);
     color: white;
     height: 500px;
@@ -266,44 +266,44 @@ h1 {
     padding: 40px;
 }
 
-.contact-form{
-    flex-basis:800px;
+.contact-form {
+    flex-basis: 800px;
 }
 
-.divider{
-    width:2px;
-    height:90%;
-    background-color:white;
+.divider {
+    width: 2px;
+    height: 90%;
+    background-color: white;
 }
 
-.social{
-    display:flex; 
-    gap:40px;
+.social {
+    display: flex;
+    gap: 40px;
 }
 
-.website{
-    font-size:30px;
-    cursor:pointer;
+.website {
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .github {
     font-size: 30px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .LinkedIn {
     font-size: 30px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .twitter {
     font-size: 30px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .insta {
     font-size: 30px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .logo-vid {
@@ -313,44 +313,57 @@ h1 {
 
 }
 
-@media (min-width:1700px){
-    .first-section{
-        height:1000px;
+@media (min-width:1700px) {
+    .first-section {
+        height: 1000px;
     }
-    .about-section{
-        height:1100px;
+
+    .about-section {
+        height: 1100px;
     }
-    .card{
-        height:650px;
+
+    .card {
+        height: 650px;
     }
 }
-@media (max-width:400px){
-    body{
-        overflow-x:hidden !important;
+
+@media (max-width:400px) {
+    .navbar {
+        position: fixed;
+        height: 50px;
+        width: 100vw;
+        transition: background-color, height 0.2s ease;
     }
-    .navbar{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+
+    .nav-active {
+        height: 60px;
+        background-color: rgba(75, 97, 48, 0.99);
+        transition: background-color, height 0.4s ease;
+        z-index: 1000;
     }
-    .name{
+
+    .name {
         font-size: 40px;
     }
-    .first-section{
-        height:800px;
-        width:100%;
+
+    .first-section {
+        height: 800px;
+        width: 100vw;
     }
-    #scroll-to-about{
-        display:none;
+
+    #scroll-to-about {
+        display: none;
     }
-    .about-section{
-        height:800px;
-        width:100%;
+
+    .about-section {
+        height: auto;
+        width: 100vw;
         text-wrap: wrap;
         font-size: 20px;
     }
-    .about-flex{
-        flex-wrap:wrap;
+
+    .about-flex {
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
